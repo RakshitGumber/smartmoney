@@ -10,7 +10,7 @@ const Sidebar = () => {
     <aside
       className={clsx(
         "sidebar-container",
-        isOpen ? " sidebar-open" : "sidebar-closed"
+        isOpen ? "sidebar-open animate" : "sidebar-closed animate"
       )}
     >
       <nav className="main-navigation">
