@@ -2,6 +2,7 @@ import { Icon } from "@iconify/react/dist/iconify.js";
 import { useSidebar } from "../../store/useSidebar";
 import "./sidebar.css";
 import clsx from "clsx";
+import { Link } from "@tanstack/react-router";
 
 const Sidebar = () => {
   const { isOpen } = useSidebar((state) => state);
@@ -15,8 +16,12 @@ const Sidebar = () => {
     >
       <nav className="main-navigation">
         <div className="navigation-item">
-          <Icon icon="fa:home" />
-          <span className="onExpanded">Home</span>
+          <Link to="/">
+            <div className="icon">
+              <Icon icon="fa:home" />
+            </div>
+            <span className="onExpanded">Home</span>
+          </Link>
         </div>
       </nav>
     </aside>
