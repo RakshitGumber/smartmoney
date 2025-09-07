@@ -17,5 +17,26 @@
 
 .title {
     text-transform: uppercase;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.title h1 {
     font-size: 22px;
+    padding-bottom: 1px;
+}
+
+button.sidebar-toggle {
+    background-color: var(--background);
+    padding: 4px;
+    font-size: 28px;
+    color: white;
+    display: flex;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+button.sidebar-toggle:hover {
+    background-color: #2a2a2a;
 }
